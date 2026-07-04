@@ -1,7 +1,8 @@
-name: Template
+name: UnoEconomy
 version: ${version}
-main: me.unoprojects.template.DefaultPluginTemplate
+main: me.unoprojects.unoeconomy.DefaultUnoEconomy
 api-version: '1.21'
 
 author: UnoProjects
-description: Plugin template
+description: Economy plugin
+depend: [UnoCore]

@@ -3,14 +3,16 @@ plugins {
 }
 
 allprojects {
-    group = "me.unoprojects.template"
+    group = "me.unoprojects.unoeconomy"
     version = "1.0.0"
 
     repositories {
+        mavenLocal()
         mavenCentral()
         maven("https://repo.papermc.io/repository/maven-public/")
         maven("https://repo.codemc.io/repository/maven-releases/")
         maven("https://repo.codemc.io/repository/maven-snapshots/")
         maven("https://maven.enginehub.org/repo/")
+        maven("https://repo.extendedclip.com/releases/")
     }
 }
