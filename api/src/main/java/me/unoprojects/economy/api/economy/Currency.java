@@ -1,4 +1,4 @@
-package me.unoprojects.unoeconomy.api.economy;
+package me.unoprojects.economy.api.economy;
 
 import java.util.Locale;
 

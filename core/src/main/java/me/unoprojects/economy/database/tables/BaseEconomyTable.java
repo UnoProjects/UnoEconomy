@@ -1,9 +1,9 @@
-package me.unoprojects.unoeconomy.database.tables;
+package me.unoprojects.economy.database.tables;
 
 import me.unoprojects.unocore.api.database.ConnectionProvider;
-import me.unoprojects.unoeconomy.api.UnoEconomy;
-import me.unoprojects.unoeconomy.api.database.tables.EconomyTable;
-import me.unoprojects.unoeconomy.api.economy.Currency;
+import me.unoprojects.economy.api.UnoEconomy;
+import me.unoprojects.economy.api.database.tables.EconomyTable;
+import me.unoprojects.economy.api.economy.Currency;
 import org.intellij.lang.annotations.Language;
 
 import java.sql.Connection;

@@ -1,12 +1,12 @@
-package me.unoprojects.unoeconomy;
+package me.unoprojects.economy;
 
 import me.unoprojects.unocore.api.UnoCore;
-import me.unoprojects.unoeconomy.api.UnoEconomy;
-import me.unoprojects.unoeconomy.api.database.tables.EconomyTable;
-import me.unoprojects.unoeconomy.database.tables.BaseEconomyTable;
+import me.unoprojects.economy.api.UnoEconomy;
+import me.unoprojects.economy.api.database.tables.EconomyTable;
+import me.unoprojects.economy.database.tables.BaseEconomyTable;
 
-import me.unoprojects.unoeconomy.commands.UnoEconomyCommand;
-import me.unoprojects.unoeconomy.placeholders.UnoEconomyExpansion;
+import me.unoprojects.economy.commands.UnoEconomyCommand;
+import me.unoprojects.economy.placeholders.UnoEconomyExpansion;
 import org.bukkit.Bukkit;
 
 public class DefaultUnoEconomy extends UnoEconomy {
@@ -16,7 +16,7 @@ public class DefaultUnoEconomy extends UnoEconomy {
     @Override
     protected void onModuleEnable() {
         this.economyTable = new BaseEconomyTable(UnoCore.getInstance().getConnectionProvider(), this);
-        UnoCore.getInstance().getPlayerDataManager().registerProvider(new me.unoprojects.unoeconomy.data.EconomyDataProvider(economyTable));
+        UnoCore.getInstance().getPlayerDataManager().registerProvider(new me.unoprojects.economy.data.EconomyDataProvider(economyTable));
 
         registerCommands(new UnoEconomyCommand(this).get());
 

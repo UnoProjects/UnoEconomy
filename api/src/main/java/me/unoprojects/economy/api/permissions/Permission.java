@@ -1,4 +1,4 @@
-package me.unoprojects.unoeconomy.api.permissions;
+package me.unoprojects.economy.api.permissions;
 
 public enum Permission {
 

@@ -1,4 +1,4 @@
-package me.unoprojects.unoeconomy.commands.sub;
+package me.unoprojects.economy.commands.sub;
 
 import dev.jorel.commandapi.arguments.ArgumentSuggestions;
 import dev.jorel.commandapi.arguments.DoubleArgument;
@@ -7,10 +7,10 @@ import dev.jorel.commandapi.arguments.StringArgument;
 import me.unoprojects.unocore.api.UnoCore;
 import me.unoprojects.unocore.api.commands.SubCommand;
 import me.unoprojects.unocore.api.data.UnoPlayer;
-import me.unoprojects.unoeconomy.api.UnoEconomy;
-import me.unoprojects.unoeconomy.api.economy.Currency;
-import me.unoprojects.unoeconomy.api.economy.EconomyData;
-import me.unoprojects.unoeconomy.api.permissions.Permission;
+import me.unoprojects.economy.api.UnoEconomy;
+import me.unoprojects.economy.api.economy.Currency;
+import me.unoprojects.economy.api.economy.EconomyData;
+import me.unoprojects.economy.api.permissions.Permission;
 import org.bukkit.entity.Player;
 
 import java.util.Optional;
@@ -18,17 +18,17 @@ import java.util.stream.Stream;
 
 import static me.unoprojects.unocore.api.utils.ColorUtils.parse;
 
-public class AddSubCommand extends SubCommand<UnoEconomy> {
+public class RemoveSubCommand extends SubCommand<UnoEconomy> {
 
     private static final String PREFIX = " <gradient:#FA982A:#FFC57A><b>UnoEconomy</b></gradient> <dark_gray>» <gray>";
 
-    public AddSubCommand(UnoEconomy plugin) {
-        super(plugin, "add");
+    public RemoveSubCommand(UnoEconomy plugin) {
+        super(plugin, "remove");
     }
 
     @Override
     protected void setup() {
-        withPermission(Permission.COMMAND_ADD.getPermission());
+        withPermission(Permission.COMMAND_REMOVE.getPermission());
         withArguments(
                 new EntitySelectorArgument.OnePlayer("target"),
                 new DoubleArgument("amount", 0.0),
@@ -64,11 +64,11 @@ public class AddSubCommand extends SubCommand<UnoEconomy> {
                 return;
             }
 
-            double newBalance = econData.getBalance(currency) + amount;
+            double newBalance = Math.max(0.0, econData.getBalance(currency) - amount);
             econData.setBalance(currency, newBalance);
             plugin.getEconomyTable().setBalance(unoPlayer.getId(), currency, newBalance);
 
-            sender.sendMessage(parse(PREFIX + "Aggiunti <green>" + currency.format(amount) + "</green> a <yellow>" + targetPlayer.getName() + "</yellow> in <white>" + currency.getDisplayName() + "</white>."));
+            sender.sendMessage(parse(PREFIX + "Rimossi <red>" + currency.format(amount) + "</red> a <yellow>" + targetPlayer.getName() + "</yellow> in <white>" + currency.getDisplayName() + "</white>."));
         });
     }
 }

@@ -1,11 +1,11 @@
-package me.unoprojects.unoeconomy.placeholders;
+package me.unoprojects.economy.placeholders;
 
 import me.clip.placeholderapi.expansion.PlaceholderExpansion;
 import me.unoprojects.unocore.api.UnoCore;
 import me.unoprojects.unocore.api.data.UnoPlayer;
-import me.unoprojects.unoeconomy.api.UnoEconomy;
-import me.unoprojects.unoeconomy.api.economy.Currency;
-import me.unoprojects.unoeconomy.api.economy.EconomyData;
+import me.unoprojects.economy.api.UnoEconomy;
+import me.unoprojects.economy.api.economy.Currency;
+import me.unoprojects.economy.api.economy.EconomyData;
 import org.bukkit.OfflinePlayer;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;

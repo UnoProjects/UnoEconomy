@@ -1,10 +1,10 @@
-package me.unoprojects.unoeconomy.data;
+package me.unoprojects.economy.data;
 
 import me.unoprojects.unocore.api.data.PlayerComponentProvider;
 import me.unoprojects.unocore.api.data.UnoPlayer;
-import me.unoprojects.unoeconomy.api.economy.Currency;
-import me.unoprojects.unoeconomy.api.economy.EconomyData;
-import me.unoprojects.unoeconomy.api.database.tables.EconomyTable;
+import me.unoprojects.economy.api.economy.Currency;
+import me.unoprojects.economy.api.economy.EconomyData;
+import me.unoprojects.economy.api.database.tables.EconomyTable;
 
 import java.util.ArrayList;
 import java.util.List;

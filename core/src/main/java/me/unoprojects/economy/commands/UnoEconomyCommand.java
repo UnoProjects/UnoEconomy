@@ -1,14 +1,14 @@
-package me.unoprojects.unoeconomy.commands;
+package me.unoprojects.economy.commands;
 
 import dev.jorel.commandapi.CommandAPICommand;
-import me.unoprojects.unoeconomy.api.UnoEconomy;
+import me.unoprojects.economy.api.UnoEconomy;
 import me.unoprojects.unocore.api.commands.CommandSupplier;
-import me.unoprojects.unoeconomy.commands.sub.AddSubCommand;
-import me.unoprojects.unoeconomy.commands.sub.RemoveSubCommand;
-import me.unoprojects.unoeconomy.commands.sub.SetSubCommand;
-import me.unoprojects.unoeconomy.commands.sub.ViewSubCommand;
+import me.unoprojects.economy.commands.sub.AddSubCommand;
+import me.unoprojects.economy.commands.sub.RemoveSubCommand;
+import me.unoprojects.economy.commands.sub.SetSubCommand;
+import me.unoprojects.economy.commands.sub.ViewSubCommand;
 
-import me.unoprojects.unoeconomy.api.permissions.Permission;
+import me.unoprojects.economy.api.permissions.Permission;
 
 import static me.unoprojects.unocore.api.utils.ColorUtils.parse;
 import static net.kyori.adventure.text.Component.empty;

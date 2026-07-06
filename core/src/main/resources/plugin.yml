@@ -1,6 +1,6 @@
 name: UnoEconomy
 version: ${version}
-main: me.unoprojects.unoeconomy.DefaultUnoEconomy
+main: me.unoprojects.economy.DefaultUnoEconomy
 api-version: '1.21'
 
 author: UnoProjects

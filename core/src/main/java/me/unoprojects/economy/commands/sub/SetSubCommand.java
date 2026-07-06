@@ -1,4 +1,4 @@
-package me.unoprojects.unoeconomy.commands.sub;
+package me.unoprojects.economy.commands.sub;
 
 import dev.jorel.commandapi.arguments.ArgumentSuggestions;
 import dev.jorel.commandapi.arguments.DoubleArgument;
@@ -7,10 +7,10 @@ import dev.jorel.commandapi.arguments.StringArgument;
 import me.unoprojects.unocore.api.UnoCore;
 import me.unoprojects.unocore.api.commands.SubCommand;
 import me.unoprojects.unocore.api.data.UnoPlayer;
-import me.unoprojects.unoeconomy.api.UnoEconomy;
-import me.unoprojects.unoeconomy.api.economy.Currency;
-import me.unoprojects.unoeconomy.api.economy.EconomyData;
-import me.unoprojects.unoeconomy.api.permissions.Permission;
+import me.unoprojects.economy.api.UnoEconomy;
+import me.unoprojects.economy.api.economy.Currency;
+import me.unoprojects.economy.api.economy.EconomyData;
+import me.unoprojects.economy.api.permissions.Permission;
 import org.bukkit.entity.Player;
 
 import java.util.Optional;

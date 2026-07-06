@@ -1,7 +1,7 @@
-package me.unoprojects.unoeconomy.api;
+package me.unoprojects.economy.api;
 
 import me.unoprojects.unocore.api.modules.UnoPlugin;
-import me.unoprojects.unoeconomy.api.database.tables.EconomyTable;
+import me.unoprojects.economy.api.database.tables.EconomyTable;
 
 public abstract class UnoEconomy extends UnoPlugin {
 

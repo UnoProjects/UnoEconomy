@@ -3,7 +3,7 @@ plugins {
 }
 
 allprojects {
-    group = "me.unoprojects.unoeconomy"
+    group = "me.unoprojects.economy"
     version = "1.0.0"
 
     repositories {
